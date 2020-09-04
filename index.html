@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 21 - Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Ejemplo Clase 21</h2>
+    <form method="get">
+        <label for="name"><p>Nombre</p>
+        <input class="form-nombre" type="text" name="nombre" id ="name" placeholder="Placeholder Nombre" /> 
+        <p id="error-nombre"></p>
+    </label>
+        <label for="age"><p>Edad</p>
+        <input class="form-edad" type="number" name="age" id="age" /> 
+    </label>
+        <label for="email"><p>Email *</p>
+        <input class="form-email" type="email" name="email" id="mail" required/> 
+    </label>
+        <label for="phone"><p>Telefone</p>
+        <input class="form-telefono" type="Telefone" name="telefono"  id="phone" value="(11)" /> 
+    </label>
+        <label for="password"><p>Contraseña</p>
+        <input class="form-contrasenia" type="password" name="contrasenia" maxlength="6" /> 
+    </label>
+
+        <div class="form-otro">
+            <h2>Otro Forms</h2>
+            <p>Si o No?</p>
+            <input type="radio" name="pregunta" value="si" checked>Si
+            <input type="radio" name="pregunta" value="no"> No
+
+            <p>Colores</p>
+            <input type="checkbox" name="color" value="red">Rojo
+            <input type="checkbox" name="color" value="green"> Verde
+            <input type="checkbox" name="color" value="blue"> Azul
+            <input type="checkbox" name="color" value="yellow"> Amarillo
+        </div>
+
+        <div class="form-otro2">
+            <h2>Otro Forms 2</h2>
+            <p>Opciones</p>
+            <select name="opcion">
+                <option value="uno">Opcion Uno</option>
+                <option value="dos">Opcion Dos</option>
+                <option value="tres">Opcion Tres</option>
+            </select>
+            <p>Eso es un textarea</p>
+
+            <textarea class="texto" name="texto" placeholder="texto test" cols="20" rows="5"></textarea>
+
+            <p>Para enviar:</p>
+            <input type="submit" id="enviar" value="enviar">
+        </div>
+
+
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

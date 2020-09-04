@@ -1,0 +1,178 @@
+             /*
+
+Nombre <input type="text" /> 
+Edad <input type="number" /> number = acepta letra e
+Email <input type="email" /> 
+Contraseña <input type="password" /> 
+Enviar <input type="submit"> 
+
+names : backend
+name="name"
+name="age"
+
+action : onde enviar
+<form action="/contacto" 
+<form action="/contacto" 
+
+method : metodo del envio
+method="get"> = PUBLICO
+method="get"> = PRIVADO 
+
+placeholder : adentro del form : desaparece al escribir
+placeholder="Nombre...">
+
+value : valor adentro del form : lo envia auto completado : backend
+<input type="Telefone" name="phone" value="(11)" /> Telefone
+
+maxlenght : limite de caracteres
+maxlength="6"
+* usar em valores con limites tipo nro tarjeta
+
+required : verificado
+para verificar que el dato informado es valido 
+tipo email con @
+
+select  :: opciones para elegir en una lista
+<select name="opcion">
+<option value="uno">Opcion Uno</option>
+
+
+checkbox :: elegir mas de uno
+   <input type="checkbox" name="color" value="red">Rojo
+
+// radio :: bola selectiva
+input type ="radio"
+para elegir uno o otro poner el mismo eje.name="pregunta"
+para enviar el valor poner eje. value="si"> Si
+checked : dejar ya seleccionado
+
+textarea = area de texto
+cols = 20 : colunas
+rows = 5 : fila
+
+para mejor acceso:
+<label for ="id del elemento">
+*/
+             
+             body {
+                 background-color: #EDDCD2;
+                 color: #343a40;
+                 font-family: Georgia, 'Times New Roman';
+             }
+             
+             .form-nombre {
+                 border: none;
+                 border-bottom: 1px solid #343a40;
+                 background-color: #D6E2E9;
+                 padding: 5px;
+                 outline: none;
+             }
+             
+             .form-edad {
+                 border: none;
+                 border-bottom: 1px solid #343a40;
+                 background-color: #DBE7E4;
+                 padding: 5px;
+                 outline: none;
+             }
+             
+             .form-email {
+                 border: none;
+                 border-bottom: 1px solid #343a40;
+                 background-color: #FDE2E4;
+                 padding: 5px;
+                 outline: none;
+             }
+             
+             .form-telefono {
+                 border: none;
+                 border-bottom: 1px solid #343a40;
+                 background-color: #FFF1E6;
+                 padding: 5px;
+                 outline: none;
+             }
+             
+             .form-contrasenia {
+                 border: none;
+                 border-bottom: 1px solid #343a40;
+                 background-color: #F0EFEB;
+                 padding: 5px;
+                 outline: none;
+             }
+             
+             .form-nombre::placeholder {
+                 color: #B8BAC8;
+             }
+             
+             .form-otro {
+                 background-color: #F0EFEB;
+             }
+             
+             .texto {
+                 background-color: #EDDCD2;
+             }
+             
+             .form-otro2 {
+                 background-color: #FFF1E6;
+             }
+             
+             .form-nombre:focus,
+             .form-edad:focus,
+             .form-email:focus,
+             .form-telefono:focus,
+             .form-contrasenia:focus {
+                 border: 2px solid #99C1DE;
+             }
+             
+             .input-error {
+                 border: 1px solid #FAD2E1;
+             }
+             /* estilo de copiados de internet */
+             
+             input[type='radio']:after {
+                 width: 15px;
+                 height: 15px;
+                 border-radius: 15px;
+                 top: -2px;
+                 left: -1px;
+                 position: relative;
+                 background-color: #d1d3d1;
+                 content: '';
+                 display: inline-block;
+                 visibility: visible;
+                 border: 2px solid white;
+             }
+             
+             input[type='radio']:checked:after {
+                 width: 15px;
+                 height: 15px;
+                 border-radius: 15px;
+                 top: -2px;
+                 left: -1px;
+                 position: relative;
+                 background-color: #cca5a6;
+                 content: '';
+                 display: inline-block;
+                 visibility: visible;
+                 border: 2px solid white;
+             }
+             
+             input[type=checkbox]:focus {
+                 outline: 1px solid rgba(0, 0, 0, 0.2);
+             }
+             
+             input[type=checkbox] {
+                 background-color: #DDD;
+                 border-radius: 2px;
+                 appearance: none;
+                 width: 17px;
+                 height: 17px;
+                 cursor: pointer;
+                 position: relative;
+                 top: 5px;
+             }
+             
+             input[type=checkbox]:checked {
+                 background-color: #409fd6;
+                 background: #409fd6 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+             }
